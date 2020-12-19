@@ -1,0 +1,39 @@
+#form {
+    background-color:burlywood;
+    padding: 25px;
+    width: 500px;
+    background-image: url(cloud-background-1.jpg);
+    color: white;
+}
+
+li {
+    background-color: tomato;
+    opacity: 0.6;
+}
+
+#emailError {
+    color: red;
+}
+
+#btn {
+    margin-bottom: 15px;
+}
+
+#message {
+    background-color: tomato;
+    opacity: 0.6;
+    color: green;
+    padding: 3px;
+}
+
+#date {
+    background-color: tomato;
+    opacity: 0.6;
+    padding: 3px;
+}
+
+#time {
+    background-color: tomato;
+    opacity: 0.6;
+    padding: 3px;
+}
