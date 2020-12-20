@@ -36,29 +36,34 @@ function login() {
     const weather5 = document.getElementById("weather5");
     console.log(weatherData.DailyForecasts); //I used this beautiful line to read the API in the console and find everything below
     const day1 = document.createElement("li");
-    day1.innerHTML = `<a href="">${weatherData.DailyForecasts[0].Date}</a><br>Max: ${weatherData.DailyForecasts[0].Temperature.Maximum.Value} ${weatherData.DailyForecasts[0].Temperature.Maximum.Unit} 
-        Min: ${weatherData.DailyForecasts[0].Temperature.Minimum.Value} ${weatherData.DailyForecasts[0].Temperature.Minimum.Unit}<br> 
-        Day: ${weatherData.DailyForecasts[0].Day.IconPhrase} Night: ${weatherData.DailyForecasts[0].Night.IconPhrase}`;
+    day1.innerHTML = `<a href="">${weatherData.DailyForecasts[0].Date}</a><br><b>Max:</b> ${weatherData.DailyForecasts[0].Temperature.Maximum.Value} ${weatherData.DailyForecasts[0].Temperature.Maximum.Unit} 
+        <b>Min:</b> ${weatherData.DailyForecasts[0].Temperature.Minimum.Value} ${weatherData.DailyForecasts[0].Temperature.Minimum.Unit}<br> 
+        <b>Day:</b> ${weatherData.DailyForecasts[0].Day.IconPhrase} <b>Night:</b> ${weatherData.DailyForecasts[0].Night.IconPhrase}`;
+    day1.style.backgroundColor = "rgb(255, 0, 0, 0.6)";
     weather1.appendChild(day1);
     const day2 = document.createElement("li");
-    day2.innerHTML = `<a href="">${weatherData.DailyForecasts[1].Date}</a><br>Max: ${weatherData.DailyForecasts[1].Temperature.Maximum.Value} ${weatherData.DailyForecasts[1].Temperature.Maximum.Unit} 
-        Min: ${weatherData.DailyForecasts[1].Temperature.Minimum.Value} ${weatherData.DailyForecasts[1].Temperature.Minimum.Unit}<br> 
-        Day: ${weatherData.DailyForecasts[1].Day.IconPhrase} Night: ${weatherData.DailyForecasts[1].Night.IconPhrase}`;
+    day2.innerHTML = `<a href="">${weatherData.DailyForecasts[1].Date}</a><br><b>Max:</b> ${weatherData.DailyForecasts[1].Temperature.Maximum.Value} ${weatherData.DailyForecasts[1].Temperature.Maximum.Unit} 
+        <b>Min:</b> ${weatherData.DailyForecasts[1].Temperature.Minimum.Value} ${weatherData.DailyForecasts[1].Temperature.Minimum.Unit}<br> 
+        <b>Day:</b> ${weatherData.DailyForecasts[1].Day.IconPhrase} <b>Night:</b> ${weatherData.DailyForecasts[1].Night.IconPhrase}`;
+    day2.style.backgroundColor = "	rgb(255,165,0, 0.6)";
     weather2.appendChild(day2);
     const day3 = document.createElement("li");
-    day3.innerHTML = `<a href="">${weatherData.DailyForecasts[2].Date}</a><br>Max: ${weatherData.DailyForecasts[2].Temperature.Maximum.Value} ${weatherData.DailyForecasts[2].Temperature.Maximum.Unit} 
-        Min: ${weatherData.DailyForecasts[2].Temperature.Minimum.Value} ${weatherData.DailyForecasts[2].Temperature.Minimum.Unit}<br> 
-        Day: ${weatherData.DailyForecasts[2].Day.IconPhrase} Night: ${weatherData.DailyForecasts[2].Night.IconPhrase}`;
+    day3.innerHTML = `<a href="">${weatherData.DailyForecasts[2].Date}</a><br><b>Max:</b> ${weatherData.DailyForecasts[2].Temperature.Maximum.Value} ${weatherData.DailyForecasts[2].Temperature.Maximum.Unit} 
+        <b>Min:</b> ${weatherData.DailyForecasts[2].Temperature.Minimum.Value} ${weatherData.DailyForecasts[2].Temperature.Minimum.Unit}<br> 
+        <b>Day:</b> ${weatherData.DailyForecasts[2].Day.IconPhrase} <b>Night:</b> ${weatherData.DailyForecasts[2].Night.IconPhrase}`;
+    day3.style.backgroundColor = "rgb(255, 255, 0, 0.6)";
     weather3.appendChild(day3);
     const day4 = document.createElement("li");
-    day4.innerHTML = `<a href="">${weatherData.DailyForecasts[3].Date}</a><br>Max: ${weatherData.DailyForecasts[3].Temperature.Maximum.Value} ${weatherData.DailyForecasts[3].Temperature.Maximum.Unit} 
-        Min: ${weatherData.DailyForecasts[3].Temperature.Minimum.Value} ${weatherData.DailyForecasts[3].Temperature.Minimum.Unit}<br> 
-        Day: ${weatherData.DailyForecasts[3].Day.IconPhrase} Night: ${weatherData.DailyForecasts[3].Night.IconPhrase}`;
+    day4.innerHTML = `<a href="">${weatherData.DailyForecasts[3].Date}</a><br><b>Max:</b> ${weatherData.DailyForecasts[3].Temperature.Maximum.Value} ${weatherData.DailyForecasts[3].Temperature.Maximum.Unit} 
+        <b>Min:</b> ${weatherData.DailyForecasts[3].Temperature.Minimum.Value} ${weatherData.DailyForecasts[3].Temperature.Minimum.Unit}<br> 
+        <b>Day:</b> ${weatherData.DailyForecasts[3].Day.IconPhrase} <b>Night:</b> ${weatherData.DailyForecasts[3].Night.IconPhrase}`;
+    day4.style.backgroundColor = "rgb(0, 255, 0, 0.6)";
     weather4.appendChild(day4);
     const day5 = document.createElement("li");
-    day5.innerHTML = `<a href="">${weatherData.DailyForecasts[4].Date}</a><br>Max: ${weatherData.DailyForecasts[4].Temperature.Maximum.Value} ${weatherData.DailyForecasts[4].Temperature.Maximum.Unit} 
-        Min: ${weatherData.DailyForecasts[4].Temperature.Minimum.Value} ${weatherData.DailyForecasts[4].Temperature.Minimum.Unit}<br> 
-        Day: ${weatherData.DailyForecasts[4].Day.IconPhrase} Night: ${weatherData.DailyForecasts[4].Night.IconPhrase}`;
+    day5.innerHTML = `<a href="">${weatherData.DailyForecasts[4].Date}</a><br><b>Max:</b> ${weatherData.DailyForecasts[4].Temperature.Maximum.Value} ${weatherData.DailyForecasts[4].Temperature.Maximum.Unit} 
+        <b>Min:</b> ${weatherData.DailyForecasts[4].Temperature.Minimum.Value} ${weatherData.DailyForecasts[4].Temperature.Minimum.Unit}<br> 
+        <b>Day:</b> ${weatherData.DailyForecasts[4].Day.IconPhrase} <b>Night:</b> ${weatherData.DailyForecasts[4].Night.IconPhrase}`;
+    day5.style.backgroundColor = "rgb(0, 0, 255, 0.6)";
     weather5.appendChild(day5);
   }
 

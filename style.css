@@ -1,14 +1,21 @@
+#body {
+    background-image: url(cloud-background-1.jpg);
+}
+
 #form {
-    background-color:burlywood;
+    background-color: white;
+    margin-top: 50px;
     padding: 25px;
     width: 500px;
-    background-image: url(cloud-background-1.jpg);
-    color: white;
+    color: black;
+    box-shadow: 3px 5px;
 }
 
 li {
-    background-color: tomato;
-    opacity: 0.6;
+    box-shadow: 3px 5px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 #emailError {
@@ -20,20 +27,15 @@ li {
 }
 
 #message {
-    background-color: tomato;
-    opacity: 0.6;
     color: green;
     padding: 3px;
 }
 
 #date {
-    background-color: tomato;
-    opacity: 0.6;
     padding: 3px;
 }
 
 #time {
-    background-color: tomato;
-    opacity: 0.6;
     padding: 3px;
 }
+
